@@ -1,0 +1,25 @@
+@import "../../../theme/index.scss";
+
+.article-cards {
+  border: 1px solid $lightGrey;
+  margin-bottom: 3em;
+
+  @include bp($medium) {
+    width: 49%;
+  }
+
+  &-content {
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .headings {
+      text-align: center;
+    }
+
+    .button-container {
+      width: auto;
+    }
+  }
+}

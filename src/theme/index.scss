@@ -47,8 +47,8 @@ body {
 h1, h2, h3, h4, h5, h6 {
   letter-spacing: .125em;
   line-height: 1.3em;
-  // font-family: $info;
-  font-weight: 100;
+  font-family: $secondary;
+  font-weight: 500;
   text-transform: uppercase;
 }
 
@@ -62,11 +62,20 @@ h1 {
   }
 }
 
+h2 {
+  font-size: 1.5em;
+  font-weight: 100;
+
+  @include bp($larger) {
+    font-size: 1.8125em;
+  }
+}
+
 p, a {
   letter-spacing: .0625em;
   line-height: 1.5em;
   font-size: 1em;
-  // font-family: $primary;
+  font-family: $primary;
 
 
   @include bp($medium) {
@@ -102,4 +111,11 @@ textarea:focus {
 
 li {
   list-style: none;
+}
+
+.homepage-wrap {
+  @include bp($larger) {
+    display: flex;
+    flex-wrap: wrap;
+  }
 }

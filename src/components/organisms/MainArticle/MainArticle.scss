@@ -1,0 +1,14 @@
+@import "../../../theme/index.scss";
+
+.main-article-card {
+  border-bottom: 1px solid $lightGrey;
+  padding-bottom: 1em;
+
+  &-containers {
+    @include bp($medium) {
+      display: flex;
+      justify-content: space-between;
+      margin-top: .5em;
+    }
+  }
+}

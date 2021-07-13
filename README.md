@@ -7,7 +7,7 @@ First, run the development server:
 ```bash
 npm run dev
 # or
-yarn dev
+npm dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
@@ -33,3 +33,23 @@ Things to know about this project
 
 - Using the atomic design principle [<--- For more info](https://andela.com/insights/structuring-your-react-application-atomic-design-principles/)
 - Using Plop to generate components so that unit testing, styling and everything you need is generated for you (checkout scripts in package.json)
+
+#### Bodyloader
+
+- When creating a new component ```npm generate```
+
+- When you'd like for the organism to appear in the body-loader:
+
+- /src/containers/CMSPage/bodyLoader.js
+
+- Run ```npm body-loader```
+ 
+This will set up your organism to align with what's coming from the endpoint:
+
+- It will use loadable to import components
+
+- It will add the component to a switch statement where the 
+components are also also LazyLoaded.
+
+- The generic page will then map through all components from the endpoints provided
+refer to /src/containers/CMSPage/index
