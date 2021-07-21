@@ -12,8 +12,8 @@ const ArticleCards = ({ title, content, url, urlToImage, author, publishedAt }) 
       <div className="article-cards-content">
         {author && <TextComponent author={author} grey uppercase />}
         {title && <Headings title={title} setChar />}
-        {publishedAt && <TextComponent publishedAt={publishedAt} grey/>}
-        {url && <Button label='read more' to={url}/>}
+        {publishedAt && <TextComponent publishedAt={publishedAt} grey />}
+        {url && <Button label='read more' to={url} />}
       </div>
     </div>
   );
