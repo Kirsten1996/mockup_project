@@ -1,0 +1,20 @@
+@import "../../../theme/index.scss";
+
+.articles {
+
+  @include bp($larger) {
+    padding-right: 2em;
+    border-right: 1px solid #E5E5E5;
+    width: 65%;
+  }
+
+  &-cards {
+    margin-top: 3em;
+
+    @include bp($medium) {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+  }
+}

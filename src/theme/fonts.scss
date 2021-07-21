@@ -1,5 +1,7 @@
 // Add font and font variable
 // Checkout components/organisms/Example/Example.scss
+@import url('https://fonts.googleapis.com/css2?family=El+Messiri&family=Martel+Sans:wght@200;300;400&display=swap');
 
 // Example
-$primary: 'Montserrat', sans-serif;
+$secondary: 'El Messiri', sans-serif;
+$primary: 'Martel Sans', sans-serif;

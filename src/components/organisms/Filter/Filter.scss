@@ -1,0 +1,19 @@
+@import "../../../theme/index.scss";
+
+.filter {
+  @include bp($larger) {
+    width: 30%;
+    padding-left: 1em;
+  }
+
+  &-container {
+    border-bottom: 1px solid $lightGrey;
+    border-top: 1px solid $lightGrey;
+    margin-bottom: 2em;
+  }
+
+  h2 {
+    text-transform: uppercase;
+    text-align: center;
+  }
+}

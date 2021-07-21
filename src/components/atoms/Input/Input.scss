@@ -1,0 +1,95 @@
+@import "../../../theme/index.scss";
+
+.input-field {
+  position: relative;
+  padding: 1.5625em 0 0;
+
+  @include bp($larger) {
+    margin-right: 3em;
+  }
+
+  > span {
+    position: absolute;
+    bottom: 0.0625rem;
+    right: 0.625rem;
+    background-color: transparent;
+    font-size: 0.625em;
+    line-height: 2.5rem;
+    color: red;
+    z-index: 2;
+    pointer-events: none;
+  }
+
+  &.other {
+    visibility: visible;
+  }
+
+  &.error {
+    input {
+      border-color: red;
+    }
+
+    label {
+      color: red;
+    }
+  }
+
+  input {
+    font-family: $primary;
+    background: white;
+    display: block;
+    padding: 0.625em 2em;
+    width: -webkit-fill-available;
+    color: $lightGrey;
+    border: 1px solid $lightGrey;
+    line-height: 1.25;
+    font-size: 1em;
+
+    &.no_border {
+      border-top: none;
+      border-right: none;
+      border-left: none;
+      padding-left: 0;
+    }
+
+    &::placeholder {
+      color: $lightGrey;
+      font-family: $primary;
+
+      &.black {
+        color: $black;
+      }
+    }
+  }
+
+  .image-wrap {
+    position: absolute;
+    bottom: .65em;
+    left: .5em;
+  }
+
+  label {
+    position: absolute;
+    display: block;
+    bottom: -.2em;
+    left: 3em;
+    padding: 0.6875em 1.25em;
+    line-height: 1.25;
+    font-size: 1em;
+    transition: all 0.3s;
+    transform-origin: left;
+    transition-delay: 100ms;
+    cursor: text;
+    color: $lightGrey;
+    font-family: $primary;
+
+    &.black {
+      color: $black;
+    }
+
+    &.no_border {
+      left: 0;
+      padding-left: 0;
+    }
+  }
+}
